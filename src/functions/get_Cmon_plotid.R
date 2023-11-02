@@ -24,7 +24,7 @@ LB72Y<-c(195925)
 
 
 #### function givePLOTID
-givePLOTID<-function(LB72X,LB72Y) {
+getplotid<-function(LB72X,LB72Y) {
 coordlist<-cbind(LB72X,LB72Y)  
 ### Determine cell in raster for x,y
 PLOTNRS<-cellFromXY(r.LUCMon,coordlist)
@@ -33,8 +33,10 @@ PLOTID<-paste0("P",as.character(as.hexmode(PLOTNRS)))
 return(PLOTID)
 }
 
-givePLOTID(137525,195925)
+
+## checking
+getplotid(137525,195925)
 points(137525,195925,cex=1,pch=16)
-givePLOTID(69085,	187275)
-givePLOTID(185735,229175)
+getplotid(69085,187275)  #=> OK
+getplotid(185735,229175) #=> OK
 
