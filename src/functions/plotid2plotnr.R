@@ -12,4 +12,5 @@ plotid2plotnr<-function(PLOTID) {
   return(PLOTNR)              
 }
 
-plotid2plotnr("P5e53833")
+# execute code
+# plotid2plotnr("P5e53833")
