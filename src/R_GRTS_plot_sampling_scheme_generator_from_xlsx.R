@@ -274,5 +274,9 @@ for (i in 1:nTRLIJST)  {
 
 
 
+## add Cmon PLOTID field
+names(LIJST)
+LIJST$PLOTID<-getplotid(LIJST$POINT_X,LIJST$POINT_Y)
+LIJST
 
 
