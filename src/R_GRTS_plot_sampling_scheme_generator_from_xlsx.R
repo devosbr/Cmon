@@ -13,6 +13,7 @@ library(readxl)
 
 ## set working directory for outputs
 setwd("C:/R/out/DVW/Lijst/")
+path<-"C:/R/out/DVW/Lijst/"
 
 db <- connect_db()
 #db <- connect_db("standardconfig.sqlite")  # create specific sampling scheme 
@@ -157,7 +158,6 @@ OUTLIST
 ### write output file
 
 fname<-paste0("Coord_",PLOTID,".csv")
-path<-"C:/R/out/DVW/Lijst/"
 outpath<-paste0(path,fname)
 write.csv(OUTLIST,outpath,row.names = F)
 
@@ -170,7 +170,6 @@ str(Trimble)
 
 
 fname<-paste0("Trimble_",PLOTID,".csv")
-path<-"C:/R/out/DVW/Lijst/"
 outpath<-paste0(path,fname)
 write.csv(Trimble,outpath,row.names = F, col.names = NULL)
 
