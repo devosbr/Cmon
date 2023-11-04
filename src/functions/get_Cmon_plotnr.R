@@ -24,6 +24,6 @@ return(PLOTNR)
 }
 
 
-
+# example: getplotnr(128112,156835)
 
 
